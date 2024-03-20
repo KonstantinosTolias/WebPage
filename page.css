@@ -53,12 +53,6 @@
 		grid-row: span 2;
 	}
 
-	.Elephant_Block:hover {
-		background-color: black;
-		color: white;
-		transition: 300ms ease;
-	}
-
 	.Elephant_Image {
 		width: 100%;
 		border: 1px solid yellow;
@@ -82,7 +76,7 @@
 		background-color: white;
 	}
 
-	.TwoAnimalsBlock:hover {
+	.Hover:hover {
 		background-color: black;
 		color: white;
 		transition: 300ms ease;
@@ -115,12 +109,6 @@
 	.ThreeAnimalsBlock {
 		background-color: white;
 		color: black;
-	}
-
-	.ThreeAnimalsBlock:hover {
-		background-color: black;
-		color: white;
-		transition: 300ms ease;
 	}
 
 	.ThreeAnimalsImage {
@@ -143,7 +131,7 @@
 }
 
 /* Styles for TABLET devices */
-@media only screen and (min-width: 768px) and (max-width:991px) {
+/* @media only screen and (min-width: 768px) and (max-width:991px) {
 	body {
 		background-color: lightgrey;
 		margin: 0px;
@@ -284,10 +272,9 @@
 		font-size: smaller;
 		font-weight: 700;
 	}
-}
-
+} */
 /* Styles for MOBILE devices */
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
 	body {
 		background-color: lightgrey;
 		margin: 0px;
@@ -428,4 +415,4 @@
 		font-size: smaller;
 		font-weight: 700;
 	}
-}
+} */
