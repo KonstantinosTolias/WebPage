@@ -1,3 +1,141 @@
+/* Mobile first */
+@media only screen and (max-width:991px) {
+	body {
+		background-color: lightgrey;
+		margin: 0px;
+	}
+
+	header {
+		height: 100vh;
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.Hover:hover {
+		background-color: black;
+		color: white;
+		transition: 300ms ease;
+	}
+
+	.Container {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.Bear {
+		filter: blur(8px);
+		width: 102%;
+		height: 102%;
+		object-fit: cover;
+	}
+
+	.Logo {
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+		height: 500px;
+		width: 500px;
+	}
+
+	.First_Grid {
+		width: 90%;
+		display: grid;
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.Main_Article {
+		width: 100%;
+		position: relative;
+		display: block;
+		background-color: white;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		/* grid-row: span 2; */
+	}
+
+	.Main_Article_Image {
+		width: 100%;
+		border: 1px solid whitesmoke;
+		object-fit: cover;
+		box-sizing: border-box;
+		aspect-ratio: 16/9;
+	}
+
+	.Main_Article_Text {
+		padding: 25px;
+		padding-top: 10px;
+		font-family: 'Roboto';
+		font-size: larger;
+		font-weight: 700;
+
+		h1 {
+			margin-top: 0;
+		}
+	}
+
+	.Side_Articles {
+		width: 100%;
+		position: relative;
+		display: block;
+		background-color: white;
+	}
+
+	.Side_Articles_Image {
+		border: 1px solid whitesmoke;
+		object-fit: cover;
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	.Side_Articles_Text {
+		padding: 20px;
+		padding-top: 0;
+		padding-bottom: 0;
+		font-family: 'Roboto';
+		font-size: small;
+		font-weight: 700;
+	}
+
+	.Second_Grid {
+		width: 90%;
+		display: grid;
+		gap: 2rem;
+		margin-bottom: 30px;
+	}
+
+	.Sub_Articles {
+		width: 100%;
+		background-color: white;
+		color: black;
+		display: block;
+	}
+
+	.Sub_Articles_Image {
+		width: 100%;
+		border: 1px solid whitesmoke;
+		object-fit: cover;
+		box-sizing: border-box;
+		aspect-ratio: 16/9;
+	}
+
+	.Sub_Articles_Text {
+		padding-left: 20px;
+		padding-bottom: 10px;
+		padding-right: 20px;
+		font-family: 'Roboto';
+		font-size: smaller;
+		font-weight: 700;
+	}
+}
+
 /* styles for DESKTOP devices */
 @media only screen and (min-width: 992px) {
 	body {
@@ -90,11 +228,16 @@
 	}
 
 	.Side_Articles_Text {
-		margin-top: -40px;
-		padding: 20px;
+		padding: 10px;
 		font-family: 'Roboto';
 		font-size: small;
 		font-weight: 700;
+		padding-top: 0;
+
+		h1 {
+			margin-top: 0;
+			;
+		}
 	}
 
 	.Second_Grid {
@@ -129,290 +272,3 @@
 		font-weight: 700;
 	}
 }
-
-/* Styles for TABLET devices */
-/* @media only screen and (min-width: 768px) and (max-width:991px) {
-	body {
-		background-color: lightgrey;
-		margin: 0px;
-	}
-
-	header {
-		height: 100vh;
-		overflow: hidden;
-		position: relative;
-		margin-bottom: 20px;
-	}
-
-	a {
-		text-decoration: none;
-		color: inherit;
-	}
-
-	.Container {
-		max-width: 1280px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.Bear {
-		filter: blur(8px);
-		width: 102%;
-		height: 102%;
-		object-fit: cover;
-	}
-
-	.Logo {
-		position: absolute;
-		transform: translate(-50%, -50%);
-		top: 50%;
-		left: 50%;
-		height: 500px;
-		width: 500px;
-	}
-
-	.First_Grid {
-		display: grid;
-		grid-template-columns: .6fr .4fr;
-		gap: 2rem;
-	}
-
-	.Elephant_Block {
-		position: relative;
-		display: block;
-		background-color: white;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		grid-row: span 2;
-	}
-
-	.Elephant_Block:hover {
-		background-color: black;
-		color: white;
-		transition: 300ms ease;
-	}
-
-	.Elephant_Image {
-		width: 100%;
-		border: 1px solid yellow;
-		object-fit: cover;
-		box-sizing: border-box;
-		aspect-ratio: 16/9;
-	}
-
-	.Elephant_Text {
-		margin-top: -30px;
-		padding: 25px;
-		font-family: 'Roboto';
-		font-size: larger;
-		font-weight: 700;
-	}
-
-	.TwoAnimalsBlock {
-		padding: 25px;
-		position: relative;
-		display: flex;
-		background-color: white;
-	}
-
-	.TwoAnimalsBlock:hover {
-		background-color: black;
-		color: white;
-		transition: 300ms ease;
-	}
-
-	.TwoAnimalsImage {
-		border: 1px solid yellow;
-		object-fit: cover;
-		height: 89px;
-		width: 160px;
-	}
-
-	.TwoAnimalsText {
-		margin-top: -40px;
-		padding: 20px;
-		font-family: 'Roboto';
-		font-size: small;
-		font-weight: 700;
-	}
-
-	.Second_Grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-auto-rows: min-content;
-		margin-top: 30px;
-		gap: 30px;
-		margin-bottom: 100px;
-	}
-
-	.ThreeAnimalsBlock {
-		background-color: white;
-		color: black;
-	}
-
-	.ThreeAnimalsBlock:hover {
-		background-color: black;
-		color: white;
-		transition: 300ms ease;
-	}
-
-	.ThreeAnimalsImage {
-		width: 100%;
-		border: 1px solid yellow;
-		object-fit: cover;
-		box-sizing: border-box;
-		aspect-ratio: 16/9;
-		display: block;
-	}
-
-	.ThreeAnimalsText {
-		padding-left: 20px;
-		padding-bottom: 10px;
-		padding-right: 20px;
-		font-family: 'Roboto';
-		font-size: smaller;
-		font-weight: 700;
-	}
-} */
-/* Styles for MOBILE devices */
-/* @media only screen and (max-width: 767px) {
-	body {
-		background-color: lightgrey;
-		margin: 0px;
-	}
-
-	header {
-		height: 100vh;
-		overflow: hidden;
-		position: relative;
-		margin-bottom: 20px;
-	}
-
-	a {
-		text-decoration: none;
-		color: inherit;
-	}
-
-	.Container {
-		max-width: 1280px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.Bear {
-		filter: blur(8px);
-		width: 102%;
-		height: 102%;
-		object-fit: cover;
-	}
-
-	.Logo {
-		position: absolute;
-		transform: translate(-50%, -50%);
-		top: 50%;
-		left: 50%;
-		height: 500px;
-		width: 500px;
-	}
-
-	.First_Grid {
-		display: grid;
-		grid-template-columns: .6fr .4fr;
-		gap: 2rem;
-	}
-
-	.Elephant_Block {
-		position: relative;
-		display: block;
-		background-color: white;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		grid-row: span 2;
-	}
-
-	.Elephant_Block:hover {
-		background-color: black;
-		color: white;
-		transition: 300ms ease;
-	}
-
-	.Elephant_Image {
-		width: 100%;
-		border: 1px solid yellow;
-		object-fit: cover;
-		box-sizing: border-box;
-		aspect-ratio: 16/9;
-	}
-
-	.Elephant_Text {
-		margin-top: -30px;
-		padding: 25px;
-		font-family: 'Roboto';
-		font-size: larger;
-		font-weight: 700;
-	}
-
-	.TwoAnimalsBlock {
-		padding: 25px;
-		position: relative;
-		display: flex;
-		background-color: white;
-	}
-
-	.TwoAnimalsBlock:hover {
-		background-color: black;
-		color: white;
-		transition: 300ms ease;
-	}
-
-	.TwoAnimalsImage {
-		border: 1px solid yellow;
-		object-fit: cover;
-		height: 89px;
-		width: 160px;
-	}
-
-	.TwoAnimalsText {
-		margin-top: -40px;
-		padding: 20px;
-		font-family: 'Roboto';
-		font-size: small;
-		font-weight: 700;
-	}
-
-	.Second_Grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-auto-rows: min-content;
-		margin-top: 30px;
-		gap: 30px;
-		margin-bottom: 100px;
-	}
-
-	.ThreeAnimalsBlock {
-		background-color: white;
-		color: black;
-	}
-
-	.ThreeAnimalsBlock:hover {
-		background-color: black;
-		color: white;
-		transition: 300ms ease;
-	}
-
-	.ThreeAnimalsImage {
-		width: 100%;
-		border: 1px solid yellow;
-		object-fit: cover;
-		box-sizing: border-box;
-		aspect-ratio: 16/9;
-		display: block;
-	}
-
-	.ThreeAnimalsText {
-		padding-left: 20px;
-		padding-bottom: 10px;
-		padding-right: 20px;
-		font-family: 'Roboto';
-		font-size: smaller;
-		font-weight: 700;
-	}
-} */
